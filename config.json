@@ -1,0 +1,22 @@
+{
+    "taskGroups": [
+        {
+            "taskSpec": {
+                "runnables": [
+                    {
+                        "container": {
+                          "imageUri": "eu.gcr.io/<your project name here>/blog_test"
+                        }
+                    }
+                ],
+                "computeResource": {
+                    "cpuMilli": 1000,
+                    "memoryMib": 2000
+                }
+            }
+        }
+    ],
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}
